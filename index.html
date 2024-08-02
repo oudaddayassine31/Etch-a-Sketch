@@ -3,14 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Etch-a-Sketch</title>
+    <script src="script.js" defer></script>
     <link rel="stylesheet" href="style.css">
-    <title> Etch-a-Sketch</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 </head>
 <body>
-    
     <div class="container">
-
+        <div class="sidebar">
+            <input id="color-picker" type="color">
+            <p id="dimensions"> Grid size : 50 x 50</p>
+            <input id="size" type="range" min="1" max="100" step="1" value="50"\>
+            <button id="clear">Clear</button>
+            <button id="eraser" value="OFF">Eraser</button>
+        </div>
+        <div class="grid">
+        </div>
     </div>
-    <script src="script.js"></script>
+
+    
 </body>
 </html>
